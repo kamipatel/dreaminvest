@@ -54,7 +54,6 @@ global with sharing class FundController {
 
         System.debug('getFunds called');     
            
-
         Integer pSize = (Integer) pageSize;
         String key = '%' + filter.searchKey + '%';
         Integer offset = ((Integer) pageNumber - 1) * pSize;
