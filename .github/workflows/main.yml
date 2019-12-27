@@ -1,14 +1,12 @@
 #.github/workflows/main.yml
-name: Validate feature branch using Scratch org 
-on: pull_request
+name: Validate feature branch on push using Scratch org 
+on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-      if: github.event.action == 'opened' || github.event.action == 'synchronize'
-    - uses: actions/setup-node@v1
+    - uses: actions/checkout@v1
       with:
         node-version: '10.x'
 

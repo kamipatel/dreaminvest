@@ -52,7 +52,8 @@ global with sharing class FundController {
         Decimal pageNumber
     ) {
 
-        System.debug('getFunds called');        
+        System.debug('getFunds called');     
+           
 
         Integer pSize = (Integer) pageSize;
         String key = '%' + filter.searchKey + '%';
